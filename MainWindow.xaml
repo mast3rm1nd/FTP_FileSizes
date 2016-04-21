@@ -1,0 +1,17 @@
+﻿<Window x:Class="FTP_FileSizes.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="FTP Files Size" Height="516.5" Width="396" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <Grid>
+        <GroupBox Header="Данные FTP" HorizontalAlignment="Left" Margin="15,12,0,0" VerticalAlignment="Top" Height="164" Width="353"/>
+        <Label Content="Адрес:" HorizontalAlignment="Left" Margin="34,44,0,0" VerticalAlignment="Top"/>
+        <Label Content="Пользователь:" HorizontalAlignment="Left" Margin="34,74,0,0" VerticalAlignment="Top"/>
+        <Label Content="Пароль:" HorizontalAlignment="Left" Margin="34,106,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="FPT_Server_Address_TextBox" HorizontalAlignment="Left" Height="24" Margin="134,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="214" Text=""/>
+        <PasswordBox x:Name="FPT_Server_Password_PasswordBox" HorizontalAlignment="Left" Margin="134,108,0,0" VerticalAlignment="Top" Width="214" Height="24" Password=""/>
+        <TextBox x:Name="FPT_Server_Login_TextBox" HorizontalAlignment="Left" Height="22" Margin="134,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="214" Text="test16_guest"/>
+        <Button x:Name="DoWork_Button" Content="Получить статистику" HorizontalAlignment="Left" Margin="34,136,0,0" VerticalAlignment="Top" Width="314" Height="26" Click="DoWork_Button_Click"/>
+        <TextBox x:Name="Results_TextBox" HorizontalAlignment="Left" Height="281" Margin="15,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="353" VerticalScrollBarVisibility="Auto" FontFamily="Consolas"/>
+
+    </Grid>
+</Window>
